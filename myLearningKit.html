@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- Webpage HTML document for Lab 3.
+  Authors: Amirhossein Chinaei, Andriy Pavlovych
+  For: EECS 1012, York University, Lassonde School of Engineering -->
+<html lang="En">
+<head>
+  <meta charset="UTF-8">
+  <title> EECS1012: Lab 8 - My Kit </title>
+  <!-- in Ex1, add a link tag here to connect it to the css file -->
+  <link rel="stylesheet" style="text/css" href="myLearningKit.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="myLearningKit.js"></script>
+  <!-- in Ex2, add a script tag here to connect it to the js file -->
+
+</head>
+<body>
+
+  <header>
+    <h1> Computational Thinking Kit </h1>
+	<nav>
+    
+	 </nav>
+  </header>
+
+  <div id="problem" class="problem">
+  </div>
+
+  <div class="column1 design">
+    <!-- in Ex3, add an attribute onclick to the following input-->
+	<input id="check1" type="checkbox" onclick="checkUncheck1()"/> Design
+
+    <!-- in Ex5, add attributes onclick and ondblclick to the following img-->
+ 	<img id="flowchart" src="null" alt="null" onclick="zoomOut()" ondblclick="zoomIn()" />
+  </div>
+
+  <div class="column2 jsSolution">
+	<input id="check2" type="checkbox" onclick="checkUncheck2()"/> JavaScript Solution
+	 <img id="js" src="null" alt="null" />
+  </div>
+
+  <div class="column3 otherSolution">
+	<input id="check3" type="checkbox" onclick="checkUncheck3()"/> Another Solution
+	<img id="another" src="null" alt="null" />
+  </div>
+
+  <footer>(c) Author of this web page: <span><!--In Ex 1, replace your name here-->Komal Patel</span> </footer>
+</body>
+</html>
